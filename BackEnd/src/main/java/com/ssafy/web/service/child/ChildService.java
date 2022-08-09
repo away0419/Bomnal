@@ -11,5 +11,5 @@ public interface ChildService {
 	void childDelete(String childId);
 	
 	// 아동 아이디 찾기
-	String getChildId(String parentId, String childName);
+	String getChildId(String childName, String parentId);
 }

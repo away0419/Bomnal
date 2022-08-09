@@ -56,10 +56,9 @@ public class ChildServiceImpl implements ChildService {
 		childRepository.delete(child);
 	}
 
-	/** 아동 아이디 찾기 */
 	@Override
-	public String getChildId(String parentId, String childName) {
-		Child child = childRepository.findByParentAndChildId(parentId, childName);
+	public String getChildId(String childName, String parentId) {
+		Child child = childRepository.findByChildNameAndParentId(childName, parentId);
 
 		return child.getChildId();
 	}
