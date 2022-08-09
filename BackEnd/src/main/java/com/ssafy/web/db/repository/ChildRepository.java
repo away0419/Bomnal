@@ -8,7 +8,7 @@ public interface ChildRepository extends JpaRepository<Child, Integer> {
 
 	Child findByChildId(String childId);
 
-	/** 보호자 아이디와 아동 이름으로 child_id 반환 */
+	/** 보호자 아이디와 아동 이름으로 child_id 반환 */  
 	Child findByParentAndChildId(String parentId, String childName);
 //	Child findByNameAndParentId(String childName, String parentId);
 
