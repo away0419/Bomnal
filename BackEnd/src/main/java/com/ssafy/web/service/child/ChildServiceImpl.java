@@ -57,8 +57,8 @@ public class ChildServiceImpl implements ChildService {
 	}
 
 	@Override
-	public String getChildId(String childName, String parentId) {
-		Child child = childRepository.findByChildNameAndParentId(childName, parentId);
+	public String getChildId(String parentId, String childName) {
+		Child child = childRepository.findByParentAndChildId(parentId, childName);
 
 		return child.getChildId();
 	}
