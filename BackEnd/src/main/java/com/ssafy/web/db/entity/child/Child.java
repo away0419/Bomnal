@@ -19,9 +19,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor // 생성자 자동 생성
+@NoArgsConstructor
 @Entity
-//@IdClass(ChildId.class)
 @Table(name = "child")
 public class Child {
 
